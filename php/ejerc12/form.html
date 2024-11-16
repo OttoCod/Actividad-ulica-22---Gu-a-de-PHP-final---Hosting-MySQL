@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 - Ingresos</title>
+</head>
+<body>
+    <h1>Verificar si paga impuestos</h1>
+    <form action="process.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="ingresos">Seleccione ingresos mensuales:</label>
+        <select id="ingresos" name="ingresos" required>
+            <option value="">Seleccione...</option>
+            <option value="1000">1 - 1000</option>
+            <option value="3000">1001 - 3000</option>
+            <option value="3001">Más de 3000</option>
+        </select><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

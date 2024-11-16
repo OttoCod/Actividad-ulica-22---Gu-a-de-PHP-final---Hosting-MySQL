@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15 - Pedido de Pizzas</title>
+</head>
+<body>
+    <h1>Pedido de Pizza</h1>
+    <form action="process.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <p>Tipos de pizza:</p>
+        <input type="checkbox" id="jamon_queso" name="pizzas[]" value="Jamon y Queso">
+        <label for="jamon_queso">Jamón y Queso</label><br>
+        <input type="number" name="cantidad_jamon_queso" min="1" value="1"><br>
+
+        <input type="checkbox" id="napolitana" name="pizzas[]" value="Napolitana">
+        <label for="napolitana">Napolitana</label><br>
+        <input type="number" name="cantidad_napolitana" min="1" value="1"><br>
+
+        <input type="checkbox" id="muzzarella" name="pizzas[]" value="Muzzarella">
+        <label for="muzzarella">Muzzarella</label><br>
+        <input type="number" name="cantidad_muzzarella" min="1" value="1"><br><br>
+
+        <button type="submit">Confirmar</button>
+    </form>
+</body>
+</html>
